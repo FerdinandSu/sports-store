@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ski-board-store", "src\ski-board-store\ski-board-store.csproj", "{DB6C2FB0-0344-11ED-AD10-70CD0DC2CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "imperial-length-converter", "src\imperial-length-converter\imperial-length-converter.csproj", "{DB6D6838-0344-11ED-BBB5-70CD0DC2CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "european-exchange-rate-calculation", "src\european-exchange-rate-calculation\european-exchange-rate-calculation.csproj", "{DB6E2B89-0344-11ED-A9F5-70CD0DC2CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asian-exchange-rate-calculation", "src\asian-exchange-rate-calculation\asian-exchange-rate-calculation.csproj", "{DB6EC7C7-0344-11ED-AA8C-70CD0DC2CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "municipal-length-converter", "src\municipal-length-converter\municipal-length-converter.csproj", "{DB6F8B11-0344-11ED-9FCB-70CD0DC2CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "metric-units-converter", "src\metric-units-converter\metric-units-converter.csproj", "{DB702756-0344-11ED-BEFE-70CD0DC2CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "skat-shoe-store", "src\skat-shoe-store\skat-shoe-store.csproj", "{DB70EAB3-0344-11ED-BF8E-70CD0DC2CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shoe-size-converter", "src\shoe-size-converter\shoe-size-converter.csproj", "{DB71AE03-0344-11ED-9D1E-70CD0DC2CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clothes-size-converter", "src\clothes-size-converter\clothes-size-converter.csproj", "{DB727153-0344-11ED-AC2B-70CD0DC2CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clothes-store", "src\clothes-store\clothes-store.csproj", "{DB73348A-0344-11ED-9335-70CD0DC2CA53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB6C2FB0-0344-11ED-AD10-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6C2FB0-0344-11ED-AD10-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6C2FB0-0344-11ED-AD10-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6C2FB0-0344-11ED-AD10-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6D6838-0344-11ED-BBB5-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6D6838-0344-11ED-BBB5-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6D6838-0344-11ED-BBB5-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6D6838-0344-11ED-BBB5-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6E2B89-0344-11ED-A9F5-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6E2B89-0344-11ED-A9F5-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6E2B89-0344-11ED-A9F5-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6E2B89-0344-11ED-A9F5-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6EC7C7-0344-11ED-AA8C-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6EC7C7-0344-11ED-AA8C-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6EC7C7-0344-11ED-AA8C-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6EC7C7-0344-11ED-AA8C-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6F8B11-0344-11ED-9FCB-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6F8B11-0344-11ED-9FCB-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6F8B11-0344-11ED-9FCB-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6F8B11-0344-11ED-9FCB-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB702756-0344-11ED-BEFE-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB702756-0344-11ED-BEFE-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB702756-0344-11ED-BEFE-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB702756-0344-11ED-BEFE-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB70EAB3-0344-11ED-BF8E-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB70EAB3-0344-11ED-BF8E-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB70EAB3-0344-11ED-BF8E-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB70EAB3-0344-11ED-BF8E-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB71AE03-0344-11ED-9D1E-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB71AE03-0344-11ED-9D1E-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB71AE03-0344-11ED-9D1E-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB71AE03-0344-11ED-9D1E-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB727153-0344-11ED-AC2B-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB727153-0344-11ED-AC2B-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB727153-0344-11ED-AC2B-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB727153-0344-11ED-AC2B-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB73348A-0344-11ED-9335-70CD0DC2CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB73348A-0344-11ED-9335-70CD0DC2CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB73348A-0344-11ED-9335-70CD0DC2CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB73348A-0344-11ED-9335-70CD0DC2CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48C2D20B-E0F1-4892-AD73-1E0E02058EA6}
+	EndGlobalSection
+EndGlobal

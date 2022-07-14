@@ -1,0 +1,538 @@
+Services:
+- Name: ski-board-store
+  Apis:
+  - Input:
+    - Required: true
+      Type: price-limit
+      Name: price-limit
+      Description: the maximum price of the ski board which customer will buy
+    - Required: true
+      Type: skill-level
+      Name: skill-level
+      Description: the skill level of customer
+    Output:
+    - Type: ski-board-brand
+      Name: brand
+      Description: brand of ski board which satisfies the requirements
+    Name: sel-brand
+    Description: select brand for ski board with give price limit and skill level
+  - Input:
+    - Required: true
+      Type: human-height
+      Name: height
+      Description: height of customer
+    - Required: true
+      Type: human-weight
+      Name: weight
+      Description: weight of customer
+    Output:
+    - Type: ski-board-length
+      Name: length
+      Description: length of selected ski board
+    - Type: ski-board-mod
+      Name: model
+      Description: model of selected ski board
+    Name: sel-mod
+    Description: select ski board model for customer with his her weight and height
+  - Input:
+    - Required: true
+      Type: ski-board-length-inch
+      Name: length
+      Description: length of the ski board in inch
+    - Required: true
+      Type: ski-board-brand
+      Name: brand
+      Description: brand of the ski board
+    - Required: true
+      Type: ski-board-mod
+      Name: model
+      Description: model of the ski board
+    Output:
+    - Type: price-usd
+      Name: price
+      Description: price of the ski board in united states dollar
+    Name: query-price
+    Description: get price of ski board with given brand length and model
+- Name: imperial-length-converter
+  Apis:
+  - Input:
+    - Required: true
+      Type: centimeter
+      Name: centimeter
+      Description: centimeter value
+    Output:
+    - Type: inch
+      Name: inch
+      Description: inch value
+    Name: cm2inch
+    Description: convert centimeter values to inch
+  - Input:
+    - Required: true
+      Type: inch
+      Name: inch
+      Description: inch value
+    Output:
+    - Type: centimeter
+      Name: centimeter
+      Description: centimeter value
+    Name: inch2cm
+    Description: convert inch values to centimeter
+- Name: european-exchange-rate-calculation
+  Apis:
+  - Input:
+    - Required: true
+      Type: usd
+      Name: usd
+      Description: united states dollar
+    Output:
+    - Type: nok
+      Name: nok
+      Description: norway krona
+    Name: usd2nok
+    Description: exchange rate from united states dollar to norway krona
+  - Input:
+    - Required: true
+      Type: usd
+      Name: usd
+      Description: united states dollar
+    Output: 
+      Type: eur
+      Name: eur
+      Description: euro
+    Name: usd2eur
+    Description: exchange rate from united states dollar to euro
+  - Input:
+    - Required: true
+      Type: eur
+      Name: eur
+      Description: euro
+    Output:
+    - Type: nok
+      Name: nok
+      Description: norway krona
+    Name: eur2nok
+    Description: exchange rate from euro to norway krona
+  - Input:
+    - Required: true
+      Type: eur
+      Name: eur
+      Description: euro
+    Output:
+    - Type: gbp
+      Name: gbp
+      Description: great britain pound
+    Name: eur2gbp
+    Description: exchange rate from euro to great britain pound
+- Name: asian-exchange-rate-calculation
+  Apis:
+  - Input:
+    - Required: true
+      Type: usd
+      Name: usd
+      Description: united states dollar
+    Output:
+    - Type: cny
+      Name: cny
+      Description: chinese yuan
+    Name: usd2cny
+    Description: exchange rate from united states dollar to chinese yuan
+  - Input:
+    - Required: true
+      Type: cny
+      Name: cny
+      Description: chinese yuan
+    Output:
+    - Type: usd
+      Name: usd
+      Description: united states dollar
+    Name: cny2usd
+    Description: exchange rate from chinese yuan to united states dollar
+  - Input:
+    - Required: true
+      Type: jpy
+      Name: jpy
+      Description: japanese yuan
+    Output:
+    - Type: usd
+      Name: usd
+      Description: united states dollar
+    Name: jpy2usd
+    Description: exchange rate from japanese yuan to united states dollar
+  - Input:
+    - Required: true
+      Type: usd
+      Name: usd
+      Description: united states dollar
+    Output:
+    - Type: jpy
+      Name: jpy
+      Description: japanese yuan
+    Name: usd2jpy
+    Description: exchange rate from united states dollar to japanese yuan
+- Name: municipal-length-converter
+  Apis:
+  - Input:
+    - Required: true
+      Type: centimeter
+      Name: centimeter
+      Description: centimeter value
+    Output:
+    - Type: cun
+      Name: cun
+      Description: cun value
+    Name: cm2cun
+    Description: convert centimeter value to cun value
+  - Input:
+    - Required: true
+      Type: cun
+      Name: cun
+      Description: cun value
+    Output:
+    - Type: centimeter
+      Name: centimeter
+      Description: centimeter value
+    Name: cun2cm
+    Description: convert centimeter value from cun value
+- Name: metric-units-converter
+  Apis:
+  - Input:
+    - Required: true
+      Type: meter
+      Name: meter
+      Description: meter value
+    Output:
+    - Type: centimeter
+      Name: centimeter
+      Description: centimeter value
+    Name: m2cm
+    Description: convert meter to centimeter
+  - Input:
+    - Required: true
+      Type: centimeter
+      Name: centimeter
+      Description: centimeter value
+    Output:
+    - Type: meter
+      Name: meter
+      Description: meter value
+    Name: cm2m
+    Description: convert meter from centimeter
+  - Input:
+    - Required: true
+      Type: gram
+      Name: gram
+      Description: gram value
+    Output:
+    - Type: kilogram
+      Name: kilogram
+      Description: kilogram value
+    Name: g2kg
+    Description: convert gram to kilogram
+  - Input:
+    - Required: true
+      Type: kilogram
+      Name: kilogram
+      Description: kilogram value
+    Output:
+    - Type: gram
+      Name: gram
+      Description: gram value
+    Name: kg2g
+    Description: convert gram from kilogram
+- Name: skat-shoe-store
+  Apis:
+  - Input:
+    - Required: true
+      Type: price-limit
+      Name: price-limit
+      Description: the maximum price of the skat shoe which customer will buy
+    - Required: true
+      Type: skill-level
+      Name: skill-level
+      Description: the skill level of customer
+    Output:
+    - Type: skat-shoe-brand
+      Name: brand
+      Description: brand of skat shoe which satisfies the requirements
+    Name: sel-brand
+    Description: select brand for skat shoe with given price limit and skill level
+  - Input:
+    - Required: true
+      Type: shoe-size
+      Name: size
+      Description: shoe size of customer
+    - Required: true
+      Type: skat-shoe-brand
+      Name: brand
+      Description: brand of skat shoe
+    Output:
+    - Type: price-usd
+      Name: price
+      Description: price of the skat shoe in united states dollar
+    Name: query-price
+    Description: get price of skat shoes with given size and brand
+- Name: shoe-size-converter
+  Apis:
+  - Input:
+    - Required: true
+      Type: human-foot-length
+      Name: length
+      Description: length of human foot
+    Output:
+    - Type: shoe-size
+      Name: size
+      Description: shoe size fits to the length
+    Name: shoe-size-convert
+    Description: get shoe-size with given length
+- Name: clothes-size-converter
+  Apis:
+  - Input:
+    - Required: true
+      Type: human-height
+      Name: height
+      Description: human height
+    Output:
+    - Type: clothes-size
+      Name: size
+      Description: size of clothes fits
+    Name: clothes-size-convert
+    Description: get the clothes size from height
+- Name: clothes-store
+  Apis:
+  - Input:
+    - Required: true
+      Type: clothes-brand
+      Name: brand
+      Description: brand of clothes
+    - Required: true
+      Type: clothes-size
+      Name: size
+      Description: size of clothes
+    Output:
+    - Type: price-usd
+      Name: price
+      Description: price of clothes in united states dollar
+    Name: query-price
+    Description: get price of specific clothes
+Classes:
+- Name: str
+  SubClassOf: []
+  Properties: []
+- Name: bool
+  SubClassOf: []
+  Properties: []
+- Name: num
+  SubClassOf: []
+  Properties: []
+- Name: any
+  SubClassOf: []
+  Properties: []
+- Name: price
+  SubClassOf:
+  - num
+  Properties: []
+- Name: price-limit
+  SubClassOf:
+  - price
+  Properties: []
+- Name: skill-level
+  SubClassOf:
+  - num
+  Properties: []
+- Name: brand
+  SubClassOf:
+  - str
+  Properties: []
+- Name: ski-board-brand
+  SubClassOf:
+  - brand
+  Properties: []
+- Name: metric-unit
+  SubClassOf:
+  - num
+  Properties: []
+- Name: length-unit
+  SubClassOf:
+  - num
+  Properties: []
+- Name: centimeter
+  SubClassOf:
+  - length-unit
+  - metric-unit
+  Properties: []
+- Name: mass-unit
+  SubClassOf:
+  - num
+  Properties: []
+- Name: kilogram
+  SubClassOf:
+  - mass-unit
+  - metric-unit
+  Properties: []
+- Name: height
+  SubClassOf:
+  - num
+  Properties: []
+- Name: length
+  SubClassOf:
+  - num
+  Properties: []
+- Name: human-height
+  SubClassOf:
+  - height
+  - centimeter
+  Properties: []
+- Name: weight
+  SubClassOf:
+  - num
+  Properties: []
+- Name: human-weight
+  SubClassOf:
+  - kilogram
+  - weight
+  Properties: []
+- Name: ski-board-length
+  SubClassOf:
+  - length
+  - centimeter
+  Properties: []
+- Name: ski-board-mod
+  SubClassOf:
+  - str
+  Properties: []
+- Name: imperial-unit
+  SubClassOf:
+  - num
+  Properties: []
+- Name: inch
+  SubClassOf:
+  - length-unit
+  - imperial-unit
+  Properties: []
+- Name: ski-board-length-inch
+  SubClassOf:
+  - length
+  - inch
+  Properties: []
+- Name: money
+  SubClassOf:
+  - num
+  Properties: []
+- Name: usd
+  SubClassOf:
+  - money
+  Properties: []
+- Name: price-usd
+  SubClassOf:
+  - price
+  - usd
+  Properties: []
+- Name: nok
+  SubClassOf:
+  - money
+  Properties: []
+- Name: eur
+  SubClassOf:
+  - money
+  Properties: []
+- Name: cny
+  SubClassOf:
+  - money
+  Properties: []
+- Name: jpy
+  SubClassOf:
+  - money
+  Properties: []
+- Name: gbp
+  SubClassOf:
+  - money
+  Properties: []
+- Name: municipal-unit
+  SubClassOf:
+  - num
+  Properties: []
+- Name: cun
+  SubClassOf:
+  - municipal-unit
+  - length-unit
+  Properties: []
+- Name: meter
+  SubClassOf:
+  - metric-unit
+  - length-unit
+  Properties: []
+- Name: gram
+  SubClassOf:
+  - metric-unit
+  - mass-unit
+  Properties: []
+- Name: skat-shoe-brand
+  SubClassOf:
+  - brand
+  Properties: []
+- Name: shoe-size
+  SubClassOf:
+  - num
+  Properties: []
+- Name: human-foot-length
+  SubClassOf:
+  - length
+  - centimeter
+  Properties: []
+- Name: skat-shoe-type
+  SubClassOf:
+  - str
+  Properties: []
+- Name: price-jpy
+  SubClassOf:
+  - price
+  - jpy
+  Properties: []
+- Name: price-cny
+  SubClassOf:
+  - price
+  - cny
+  Properties: []
+- Name: price-eur
+  SubClassOf:
+  - price
+  - eur
+  Properties: []
+- Name: price-nok
+  SubClassOf:
+  - price
+  - nok
+  Properties: []
+- Name: human-height-m
+  SubClassOf:
+  - height
+  - meter
+  Properties: []
+- Name: human-weight-g
+  SubClassOf:
+  - weight
+  - gram
+  Properties: []
+- Name: human-foot-length-cun
+  SubClassOf:
+  - length
+  - cun
+  Properties: []
+- Name: ski-board-length-m
+  SubClassOf:
+  - length
+  - meter
+  Properties: []
+- Name: human-height-inch
+  SubClassOf:
+  - height
+  - inch
+  Properties: []
+- Name: clothes-size
+  SubClassOf:
+  - num
+  Properties: []
+- Name: clothes-brand
+  SubClassOf:
+  - str
+  Properties: []
