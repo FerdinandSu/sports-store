@@ -1,4 +1,4 @@
-<h1 align="center">Sport Store</h1>
+<h1 align="center">Sports Store</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/FerdinandSukhoi/sportstore?color=56BEB8">
